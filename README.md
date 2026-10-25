@@ -52,6 +52,6 @@ Your sole task is to read the raw pseudo-C code exported from Ghidra and reconst
 ```
 
 ---
-
+The skill is available in both Turkish and English versions.
 ## 📝 License
 MIT License. Feel free to contribute and give a ⭐ if this saved your reverse engineering workflow!
