@@ -1,4 +1,4 @@
-# GhidraReconstruct 🛡️
+# GhidraReconstruct V1.1 #
 
 **GhidraReconstruct** is a universal, platform-agnostic AI agent skill (`.md`) designed to transform raw, messy Ghidra pseudo-C output into clean, standard, and fully compilable C code—**preserving 100% of the original binary logic**.
 
