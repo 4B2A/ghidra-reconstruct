@@ -1,4 +1,4 @@
-# GhidraReconstruct V1.1 #
+# GhidraReconstruct V1.2 #
 
 **GhidraReconstruct** is a universal, platform-agnostic AI agent skill (`.md`) designed to transform raw, messy Ghidra pseudo-C output into clean, standard, and fully compilable C code—**preserving 100% of the original binary logic**.
 
@@ -45,6 +45,8 @@ Your sole task is to read the raw pseudo-C code exported from Ghidra and reconst
    - `longlong` -> `long long`
 4. **Smart Contextual Renaming:** Infer the purpose of variables and functions based on the code flow. Rename generic terms (e.g., `uVar1`, `pvVar2`, `FUN_00401230`) into meaningful names (e.g., `buffer`, `key`, `index`, `decrypt_data`).
 5. Reconstruct Missing Structures: If there are unresolved or missing structs or external function prototypes within the code that Ghidra failed to parse, add them at the top of the file using logical inferences to guarantee the code's structural integrity and compilability.
+6. **No Premature Optimization on Bits:** Do not attempt to optimize bitwise shift operations and endianness-dependent masking; preserve the original logical structure exactly as it is.
+7. **Preserve Pointer Arithmetic:** Unless you are absolutely certain, do not convert raw numerical arguments or low-level pointer arithmetic into `sizeof` functions, as this can break memory structures.
 
 ## OUTPUT FORMAT
 - Do not engage in casual chat, philosophical commentary, or line-by-line explanations of your changes.
